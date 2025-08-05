@@ -112,7 +112,7 @@
 import * as React from "react";
 import { View } from "react-native";
 
-import TaskPageHeader from "../../components/TitleTextAndImage";
+import TaskPageHeader from "../../components/TaskPageHeader";
 
 export default function TaskPage() {
   return (

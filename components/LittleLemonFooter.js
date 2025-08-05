@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function LittleLemonFooter() {
   return (
@@ -15,10 +15,23 @@ export default function LittleLemonFooter() {
     //     All rights reserved by Little Lemon, 2022
     //   </Text>
     // </View>
-    <View style={{ backgroundColor: "#F4CE14", marginBottom: 10 }}>
-      <Text style={{ fontSize: 18, color: "black", textAlign: "center" }}>
+    <View style={FooterStyles.container}>
+      <Text style={FooterStyles.footerText}>
         All rights reserved by Little Lemon, 2022{" "}
       </Text>
     </View>
   );
 }
+
+const FooterStyles = StyleSheet.create({
+  container: {
+    backgroundColor: "#EE9972",
+    marginBottom: 10,
+  },
+  footerText: {
+    fontSize: 18,
+    color: "black",
+    textAlign: "center",
+    fontStyle: "italic",
+  },
+});
