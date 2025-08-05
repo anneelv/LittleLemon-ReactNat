@@ -5,14 +5,19 @@ export default function LittleLemonHeader() {
   return (
     <View
       style={{
-        flex: 0.13,
         backgroundColor: "#F4CE14",
         justifyContent: "center",
         alignItems: "center",
       }}
     >
       <Text
-        style={{ padding: 20, fontSize: 30, color: "black", paddingTop: 50 }}
+        style={{
+          padding: 20,
+          fontSize: 30,
+          color: "black",
+          paddingTop: 50,
+          fontWeight: "bold",
+        }}
       >
         Little Lemon
       </Text>
